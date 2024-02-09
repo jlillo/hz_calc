@@ -86,11 +86,7 @@ def P_from_sma(sma,Ms,VERBOSE=False):
 	return period
 
 
-def get_result(Teff,PER=False,Ms=None):
-	# print("\n")
-	print("======================")
-	print("     HZ calculator    ")
-	print("======================\n")
+def get_hz(Teff,PER=False,Ms=None):
 
 	teff = float(Teff)
 
@@ -139,7 +135,7 @@ if __name__ == "__main__":
 
 	args = cli()
 
-	opt_in, opt_out, cons_in, cons_out = get_result(args.Teff,PER=args.PER,Ms=args.MS)
+	opt_in, opt_out, cons_in, cons_out = get_hz(args.Teff,PER=args.PER,Ms=args.MS)
 
 	units = 'au'
 	if args.PER: units = 'days'
