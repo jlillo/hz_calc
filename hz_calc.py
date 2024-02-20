@@ -142,8 +142,8 @@ if __name__ == "__main__":
 
 	if args.VERBOSE:
 		print("\t ====> Results:")
-		print("\t HZ conservative ("+units+") = ", round(opt_in,2), "-->", round(opt_out,2))
-		print("\t HZ optimistic ("+units+") = ", round(cons_in,2), "-->", round(cons_out,2))
+		print("\t HZ optimistic ("+units+") = ", round(opt_in,2), "-->", round(opt_out,2))
+		print("\t HZ conservative ("+units+") = ", round(cons_in,2), "-->", round(cons_out,2))
 	else:
 		print("Use --VERBOSE option to print out the results")
 	
