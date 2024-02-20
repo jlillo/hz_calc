@@ -18,8 +18,10 @@ In this case, the code will estimate the mass of the star based on the solar met
 
 Importing it as a module
 
-`import hz_calc`
-`opt_in, opt_out, cons_in, cons_out = hz_calc.get_hz(4500,PER=true,Ms=0.75)`
+```python
+import hz_calc
+opt_in, opt_out, cons_in, cons_out = hz_calc.get_hz(4500,PER=true,Ms=0.75)
+```
 
 ### Citations needed
 
